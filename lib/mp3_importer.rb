@@ -5,6 +5,6 @@ class MP3Importer
   end
 
   def files
-    file = Dir[path]
+    file = Dir.entries(path).select{|f| !File.directory?(f)}
   end
 end
