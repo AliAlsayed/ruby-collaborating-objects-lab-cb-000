@@ -21,7 +21,7 @@ class Artist
     end
     artist = Artist.new(name)
     @@all << artist
-    artist
+    artist.name
   end
 
   def print_songs
