@@ -15,7 +15,7 @@ class Artist
     @@all
   end
 
-  def find_or_create_by_name(name)
+  def self.find_or_create_by_name(name)
     @all.each do |artist|
       return artist.name if artist.name == name
     end
