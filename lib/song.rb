@@ -8,8 +8,6 @@ class Song
     file = file.split("-")
     song = self.new(file[1].strip)
     artist = Artist.new(file[1].strip)
-    song.artist =  artist
-    artist.add_song(song)
-
+    song.artist = artist
   end
 end
