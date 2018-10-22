@@ -6,7 +6,7 @@ class Song
 
   def new_by_filename(file)
     file = file.split("-")
-    song = Song.new(file[0].strip)
-    song.artist = Artist.find_or_create_by_name(file[1].strip)
+    song = Song.new(file[1].strip)
+    song.artist = Artist.find_or_create_by_name(file[0].strip)
   end
 end
