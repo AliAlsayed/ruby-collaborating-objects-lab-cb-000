@@ -10,6 +10,7 @@ class Song
     artist = Artist.new(file[0].strip)
     artist.save
     song.artist = artist
+    artist.add_song(song)
     song
   end
 end
