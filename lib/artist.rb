@@ -19,7 +19,7 @@ class Artist
   end
 
   def print_songs
-    puts @songs
+    @songs
   end
 
   def save
