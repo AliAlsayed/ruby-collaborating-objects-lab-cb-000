@@ -9,5 +9,6 @@ class Song
     song = self.new(file[1].strip)
     artist = Artist.new(file[1].strip)
     song.artist = artist
+    song
   end
 end
