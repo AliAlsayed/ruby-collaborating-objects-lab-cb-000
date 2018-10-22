@@ -18,7 +18,7 @@ class Artist
   def find_or_create_by_name(name)
   end
 
-  def songs
+  def print_songs
     puts @songs
   end
 
