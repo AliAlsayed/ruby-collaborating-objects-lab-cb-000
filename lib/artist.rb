@@ -20,7 +20,6 @@ class Artist
       return artist if artist.name == name
     end
     artist = Artist.new(name)
-    artist
   end
 
   def print_songs
