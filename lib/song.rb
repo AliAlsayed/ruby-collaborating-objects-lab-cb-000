@@ -8,6 +8,7 @@ class Song
     file = file.split("-")
     song = self.new(file[1].strip)
     artist = Artist.new(file[0].strip)
+    artist.save
     song.artist = artist
     song
   end
